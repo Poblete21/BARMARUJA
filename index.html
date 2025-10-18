@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar - ¡Pronto Abrimos!</title>
+    <!-- Carga de Tailwind CSS para un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definición de colores y fuente personalizada */
+        :root {
+            --bg-color: #F5F5DC; /* Beige claro */
+            --accent-color: #28743A; /* Verde oscuro */
+            --text-color: #1a5632; /* Un tono ligeramente más oscuro para mejor contraste */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .message-box {
+            background-color: white;
+            color: var(--accent-color);
+            border: 3px solid var(--accent-color);
+            box-shadow: 10px 10px 0px 0px rgba(40, 116, 58, 0.75); /* Sombra con el color de acento */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal centrado y responsivo -->
+    <div class="message-box p-10 sm:p-16 max-w-lg mx-auto rounded-xl transition-all duration-300">
+        
+        <!-- Nuevo Logo (Imagen proporcionada por el usuario) -->
+        <img 
+            src="https://i.imgur.com/xvwSFbK.png" 
+            alt="Logo del Bar" 
+            class="mx-auto mb-6 w-32 h-auto sm:w-40"
+            onerror="this.onerror=null; this.src='https://placehold.co/160x160/28743A/F5F5DC?text=Logo';" 
+        />
+
+        <!-- Mensaje de estado -->
+        <h1 class="text-3xl sm:text-4xl font-extrabold mb-2 leading-tight">
+            ¡Vaya!
+        </h1>
+        <p class="text-xl sm:text-2xl font-medium">
+            Aún estamos trabajando en esta parte.
+        </p>
+        <p class="mt-4 text-base opacity-80">
+            ¡Volveremos pronto con un menú increíble!
+        </p>
+    </div>
+</body>
+</html>
